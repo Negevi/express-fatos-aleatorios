@@ -1,0 +1,41 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+#main-head {
+    height: 50rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    margin: -1.25rem;
+    font-size: 8rem;
+    text-shadow: 2px 2px 2px #690dbe;
+    margin-top: none;
+}
+
+#catchfrase {
+    font-size: 1.5rem;
+    opacity: 85%;
+}
+
+#button-div {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 80rem;
+}
+
+#register {
+    color: #690dbe;
+    cursor: pointer;
+}
+
+#login {
+    color: #690dbe;
+    cursor: pointer;
+}

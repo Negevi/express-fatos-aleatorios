@@ -1,7 +1,7 @@
 {
-  "name": "loginzinho",
+  "name": "fatos",
   "version": "1.0.0",
-  "description": "login",
+  "description": "fatos-diarios",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js"

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">
+            Login Page:
+        </h1>
+        <div id="inner">
+            <form id="in-innerR" method="post">
+                    <div class="main-head">
+                       <h1>Sign in</h1>
+                        <h1 class="stars">
+                            &#9733; &#9733;
+                        </h1>
+                    </div>
+                    <div class="input-div">
+                        <div class="input-button">
+                            <label class="label">Username</label>
+                            <input type="text" class="input" id="username" name="username">
+                            <span id="errorun"></span>
+                        </div>
+                        <div class="input-button">
+                            <label class="label">Password</label>
+                            <input type="password" class="input" id="password" name="password">
+                            <span id="errorpw"></span>
+                        </div>
+                    </div>
+                <button class="login-button" type="submit">Sign in</button>
+                <div class="buttons">
+                    <input type="checkbox" class="remember-me">Remember Me</input>
+                    <a href="#" class="forgot-me">Forgot Password?</a>
+                </div>
+
+            </form>
+            <div id="in-innerL">
+                <a>Don't have an account?</a>
+                <button class="signup-button" type="submit">Sign up</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/validation.js"></script>
+</body>
+</html>   
