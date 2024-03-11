@@ -23,13 +23,6 @@ body {
     opacity: 85%;
 }
 
-#button-div {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    width: 80rem;
-}
-
 #register {
     color: #690dbe;
     cursor: pointer;
