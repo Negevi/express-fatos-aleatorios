@@ -44,3 +44,15 @@ body {
     width: 20rem;
     color: black;
 }
+
+#submit {
+    border: 1px;
+    background-color: rgba(126, 126, 126, 0.322);
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 15rem;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 2.5rem;
+    font-size: large;
+}

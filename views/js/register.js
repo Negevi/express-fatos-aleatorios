@@ -37,7 +37,7 @@ emailInput.addEventListener("keyup", (e) => {
 
 passwordInput.addEventListener("keyup", (e) => {
     console.log(passwordInput.value);
-    if (passwordInput.value.length <= 8) {
+    if (!((passwordInput.value.length >= 8) && (validateString(passwordInput.value)))) {
         passwordInput.style.borderColor = "red"
         passwordError.innerText = "Password must contain at least 1 Capital letter, number, and be grreater then 8 characters"
         passwordError.style.color = "red"
@@ -51,7 +51,7 @@ passvalInput.addEventListener("keyup", (e) => {
     console.log(passvalInput.value);
     if (!((passvalInput.value.length >= 8) && (validateString(passvalInput.value)))) {
         passvalInput.style.borderColor = "red"
-        passvalError.innerText = "Password must contain at least 1 Capital letter, number, and be grreater then 8 characters"
+        passvalError.innerText = "Password must contain at least 1 Capital letter, number, and be greater then 8 characters"
         passvalError.style.color = "red"
     } else {
         passvalInput.style.borderColor = "green"
@@ -66,3 +66,14 @@ function validateString(input) { //chat gpt wtf || HOW TF DOES IT WORK
     // Test the input string against the pattern
     return pattern.test(input);
 }
+
+formInput.addEventListener("submit", (e) => {
+    if (passvalInput.value != passwordInput.value) {
+        console.log("pv and pw are not equal");
+        e.preventDefault();
+        passwordInput.style.borderColor = "red"
+        passvalInput.style.borderColor = "red"
+        passvalError.innerText = "Please double check your passwords, as you've typed 2 diferent ones!"
+        passvalError.style.color = "red"
+    }
+});
