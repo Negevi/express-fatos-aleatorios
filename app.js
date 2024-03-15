@@ -12,19 +12,14 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
 // Define a route for the root
-app.get('/login', (req, res) => {
-    res.sendFile('main.html', { root: path.join(__dirname, "views") });
+app.get('/', (req, res) => {
+    res.sendFile('title.html', { root: path.join(__dirname, "views") });
 });
 
-app.post('/login', (req, res) => {
+app.post('/', (req, res) => {
     console.log(req.body);
     res.send(req.body);
 });
-
-app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: path.join(__dirname, "views") })
-})
-
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");
